@@ -1,0 +1,20 @@
+$ two CHEXA sharing a face (one property)
+BEGIN BULK
+GRID           1       0     0.0     0.0     0.0
+GRID           2       0    10.0     0.0     0.0
+GRID           3       0    10.0    10.0     0.0
+GRID           4       0     0.0    10.0     0.0
+GRID           5       0     0.0     0.0    10.0
+GRID           6       0    10.0     0.0    10.0
+GRID           7       0    10.0    10.0    10.0
+GRID           8       0     0.0    10.0    10.0
+GRID          10       0    20.0     0.0     0.0
+GRID          11       0    20.0    10.0     0.0
+GRID          14       0    20.0     0.0    10.0
+GRID          15       0    20.0    10.0    10.0
+PSOLID       500       1
+CHEXA        600     500       1       2       3       4       5       6       7
++              8
+CHEXA        601     500       2      10      11       3       6      14      15
++              7
+ENDDATA

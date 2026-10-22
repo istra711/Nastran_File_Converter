@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nastran2stl"
+version = "0.2.0"
+description = "Standalone Nastran BDF to STL/STEP converter with optional shell extrusion and solids"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "istra711" }]
+keywords = [
+    "nastran",
+    "bdf",
+    "stl",
+    "step",
+    "cad",
+    "fea",
+    "mesh",
+    "converter",
+    "freecad",
+    "openems",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Multimedia :: Graphics :: 3D Modeling",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+nastran2stl = "nastran2stl.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nastran2stl*"]

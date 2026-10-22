@@ -1,0 +1,20 @@
+# Normalise line endings so clones on Windows and POSIX match.
+* text=auto
+
+*.py    text eol=lf
+*.md    text eol=lf
+*.toml  text eol=lf
+*.ini   text eol=lf
+*.json  text eol=lf
+*.bdf   text eol=lf
+*.nas   text eol=lf
+*.dat   text eol=lf
+*.ps1   text eol=crlf
+
+# Binary fixtures / build outputs
+*.stl   binary
+*.step  binary
+*.zip   binary
+*.exe   binary
+*.png   binary
+*.ico   binary

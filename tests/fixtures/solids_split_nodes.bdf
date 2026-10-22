@@ -1,0 +1,28 @@
+$ same cubes, but the shared face has duplicate nodes
+BEGIN BULK
+GRID           1       0     0.0     0.0     0.0
+GRID           2       0    10.0     0.0     0.0
+GRID           3       0    10.0    10.0     0.0
+GRID           4       0     0.0    10.0     0.0
+GRID           5       0     0.0     0.0    10.0
+GRID           6       0    10.0     0.0    10.0
+GRID           7       0    10.0    10.0    10.0
+GRID           8       0     0.0    10.0    10.0
+GRID          10       0    20.0     0.0     0.0
+GRID          11       0    20.0    10.0     0.0
+GRID          14       0    20.0     0.0    10.0
+GRID          15       0    20.0    10.0    10.0
+GRID          20       0    10.0     0.0     0.0
+GRID          21       0    20.0     0.0     0.0
+GRID          22       0    20.0    10.0     0.0
+GRID          23       0    10.0    10.0     0.0
+GRID          24       0    10.0     0.0    10.0
+GRID          25       0    20.0     0.0    10.0
+GRID          26       0    20.0    10.0    10.0
+GRID          27       0    10.0    10.0    10.0
+PSOLID       500       1
+CHEXA        600     500       1       2       3       4       5       6       7
++              8
+CHEXA        601     500      20      21      22      23      24      25      26
++             27
+ENDDATA

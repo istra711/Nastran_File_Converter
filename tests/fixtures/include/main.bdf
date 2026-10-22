@@ -1,0 +1,6 @@
+$ nested INCLUDE fixture
+BEGIN BULK
+INCLUDE 'sub/mid.bdf'
+PSHELL, 100, 1, 1.5
+CTRIA3, 200, 100, 1, 2, 3
+ENDDATA

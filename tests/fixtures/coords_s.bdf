@@ -1,0 +1,10 @@
+$ CORD2S: (r, theta, phi)
+BEGIN BULK
+CORD2S        12       0     0.0     0.0     0.0     0.0     0.0     1.0     1.0
++            0.0     0.0
+GRID           1      12     2.0    90.0    90.0
+GRID           2      12     2.0     0.0    90.0
+GRID           3      12     2.0     0.0     0.0
+PSHELL       100       1     1.5       1
+CTRIA3       200     100       1       2       3
+ENDDATA
